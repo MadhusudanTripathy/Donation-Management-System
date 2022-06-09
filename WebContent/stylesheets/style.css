@@ -1,0 +1,228 @@
+    *{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    }
+    html{
+            scroll-behavior: smooth;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        width: 100%;
+        min-height: 100vh;
+        /* 
+            CSS VH unit Property
+            Viewport Height ( vh ) 
+            – A percentage of the full viewport height. 10vh will resolve to 10% of the current viewport height. Viewport Minimum ( vmin ) 
+            – A percentage of the viewport width or height, whichever is smaller.
+        */
+        /* background: linear-gradient(0deg,#d8c3e3,#fff); */
+        box-sizing: border-box;
+        /* 
+        The box-sizing property defines how the width and height of an element are calculated:
+        should they include padding and borders, or not. 
+        
+        border-box:width set to fixed
+        content-box:width set according to content
+        */
+    }
+   
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3%;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+    
+    .bg-row{
+        width:100%;
+       
+    }
+    .col-11{
+        flex-basis: 45%;
+        min-width: 300px;
+        /* margin-bottom: 30px;   */
+        margin-left: 30px;  
+        /* position: relative; */
+    }
+    .col-12{
+        flex-basis: 50%;
+        min-width: 300px;
+        /* margin-bottom: 30px;  */
+        left: 50%;   
+        /* margin-bottom: 100px; */
+        position: absolute;
+        animation-name: rightleft;
+        animation-duration: 2s;
+        
+}
+
+@keyframes rightleft {
+  from {bottom:100%;}
+  to {bottom: 14%;}
+}
+    
+    .col-11 img{
+        width: 100%;    
+        /* padding-bottom: 10px */
+        /* height: 100%; */
+    }
+    
+    .col-12 h1{
+        font-size: 62px;
+        font-weight: 600;
+        margin-bottom: 60px; 
+           
+    }
+    .col-12 .red{
+        color: #ff4d89;
+    }
+    .col-12 .green{
+        color: #63e976;
+    }
+    .col-12 .yellow{
+        color: #feca14;
+    }   
+    .col-12 .btn{
+        margin-left: 0px; 
+        padding: 12px;  
+        margin-right: 60px;
+    }
+    .elements{
+        animation: move 3s ease-in infinite;
+    }
+    @keyframes move {
+        0% {
+            transform: scale(1, 1);
+        }
+        50% {
+            transform: scale(0.950, 0.950 );
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+    .cards-section  {
+        box-sizing: border-box;
+    }
+    .second-heading{
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .second-para{
+        color: #ff4d89;
+        text-align: center;
+    
+    }
+
+    .guide-section{
+        box-sizing: border-box;
+        padding: 40px 0px;  
+    }
+    .guide-section h2{
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            
+            /* Adjust as needed */
+            animation:
+                typing 6s steps(40, end),
+                blink-caret .75s step-end infinite;
+        
+    }
+    /* The typing effect */
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: orange;
+        }
+    }   
+    
+    .guide-container{
+        margin: 0px 100px;
+    }
+    .col-21{
+        width: 50%;
+        flex-basis: 50%;
+        min-width: 300px;
+
+        position: relative;
+    }
+    .col-22{
+        width: 50%;
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+
+   
+    .col-21 .step {
+        display: inline;
+        position: absolute;
+        left: 80px;
+        top: 18px;
+        
+    }
+    /* .col-21 .step h3{
+        color: #9822D9;
+    } */
+    .col-21 .step p{
+        padding-bottom: 118px;
+    }
+    #last-para-des{
+        padding-bottom: 0;
+    }
+    .col-22 img {
+        width: 100%; 
+        
+        margin-top: 18px;
+    }
+    .button-container{
+        
+            margin-top: 60px;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+            -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+            
+            width: 100%;
+        
+    }
+     .defination{
+
+        line-height: 2;
+        font-size: large;
+        margin-top: 120px;
+        margin-right: 20px;
+    }
+

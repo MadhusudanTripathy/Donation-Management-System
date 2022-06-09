@@ -1,0 +1,24 @@
+.site-footer
+{
+background-color:#d6f1fa;
+font-size:15px; 
+padding: 10px 0;
+text-align: center;
+margin-top: auto;
+}
+
+.site-footer p
+{
+    padding: 10px 0;
+    color: #000;
+}
+
+.site-footer .social-icons li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+.site-footer .social-icons li i{
+    color: #000;
+}

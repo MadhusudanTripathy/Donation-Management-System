@@ -1,0 +1,58 @@
+
+    .slider-box{
+        /* width: 80%; */
+        height: 90vh;
+        margin: 30px 120px;
+        position: relative;
+        overflow: hidden;
+    }
+    /* Create two equal columns that floats next to each other */
+.column-slider {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row-slider:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    #slider{
+        width:100%; 
+        display: flex;
+        transition: 0.7s;
+    }
+
+    #slider .row .col-22 p{
+        padding: 62px 0;
+    }
+    #slider .row .col-22 span{
+        color: #9822D9;
+    }
+    
+    .indicators{
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+    }
+    .indicators span{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #e2acff;
+        cursor:pointer;
+     }
+     .active{
+         background: #9822D9 !important;
+     }
+     .slide img{
+         display: inline;
+     }
+     .desc{
+         display: inline;
+     }

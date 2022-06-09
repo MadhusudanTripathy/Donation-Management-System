@@ -1,0 +1,110 @@
+.service-container {
+    /* width: 100%; */
+    height: 100vh;
+    padding: 0% 8% 0% 8%;
+}
+
+.service-container h1 {
+    text-align: center;
+    /* padding-top: 10%; */
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.service-container h1::after {
+    content: "";
+    background-color: #8183f0;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.service-container .service{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+    
+.service-container i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    /* color: #303ef7; */
+}
+.service-container h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.r:hover {
+    background: #ff4d89;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+.g:hover {
+    background: #63e976;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+.b:hover {
+    background: #2b7efe;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+.p:hover {
+    background: #9822D9;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+.y:hover {
+    background: orange;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+.v:hover {
+    background: #8183f0;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+
+.service:hover i{
+    color: aliceblue;
+}
+
+.red{
+    color: #ff4d89;
+}
+ .green{
+    color: #63e976;
+}
+ .yellow{
+    color: #feca14;
+}   
+ .blue{
+    color: #2b7efe;
+ }
+ .pink {
+    color: #9822D9;
+}
+.yellow {
+    color: #feca14;
+    
+}
+.violate {
+    
+    color: #8183f0;
+    
+}
