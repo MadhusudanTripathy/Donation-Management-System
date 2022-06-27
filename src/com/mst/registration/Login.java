@@ -15,13 +15,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class Login
- */
+
 @WebServlet("/Login")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String adminEmail ="madhusudantripathy77@gmail.com";
 		String umail=request.getParameter("email");
 		String upass=request.getParameter("password");
 		String url = "jdbc:mysql://localhost:3306/dms?autoReconnect=true&useSSL=false";
@@ -52,9 +51,19 @@ public class Login extends HttpServlet {
 		    if(rs.next())
 		    {
 		    	session.setAttribute("name", rs.getString("uname"));
+		    	session.setAttribute("email", rs.getString("uemail"));
+		    	session.setAttribute("dob", rs.getString("udob"));
+		    	session.setAttribute("phone", rs.getString("uphone"));
+		    	session.setAttribute("photoBlob", rs.getBlob("photo"));
+		    	session.setAttribute("currentUserId", rs.getString("id"));
+		    	System.out.print(rs.getString("uemail").equals(adminEmail));
+		    	if(rs.getString("uemail").equals(adminEmail)){
+		    		session.setAttribute("isAdmin", true);
+		    	}else{
+		    		session.setAttribute("isAdmin", false);
+		    	}
 		    	session.setAttribute("display", "hide");
-		    	
-		    	dispatcher=request.getRequestDispatcher("index.jsp");		    
+		    	dispatcher=request.getRequestDispatcher("explore.jsp");		    
 		    }else{
 		    	request.setAttribute("status","failed");
 		    	dispatcher=request.getRequestDispatcher("sign.jsp");

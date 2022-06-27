@@ -1,5 +1,5 @@
 nav{
-    background-color: #d6f1fa;
+    background-color: #e2e2ed;
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -29,6 +29,9 @@ nav ul li{
 }   
  .blue{
     color: #2b7efe;
+ }
+ .pink{
+    color: #ff6ce9;
  }
 a{
     text-decoration: none;
@@ -84,9 +87,6 @@ nav ul .mid{
     background-color: #8183f0;
     color: white;
     /* border-radius: 0px; */
-}
-.hide{
-	display:none;
 }
 
  

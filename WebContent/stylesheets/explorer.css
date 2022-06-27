@@ -1,0 +1,43 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;
+}
+html{
+        scroll-behavior: smooth;
+}
+.hero-bg{
+    position: relative;
+}
+
+.hero-bg img{
+    object-fit:cover;
+    width: 100%;
+    height: 90vh; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.hero-bg .quote{
+    width: 100%;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.45);
+}
+.hero-bg .quote p{
+    text-align: center;
+    padding: 20px;
+    color: #ffffe9;
+    font-size: 1.8rem;
+}
+
+nav{
+    background-color: #ffffe9 !important;
+}
+.service-container{
+    margin-top: 90vh;
+}
+/*  */

@@ -1,6 +1,4 @@
 <%
-
-
 %>
 
 
@@ -11,13 +9,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/particles.css">
-    <link rel="stylesheet" href="stylesheets/cards.css">
-    <link rel="stylesheet" href="stylesheets/navbar.css">
-    <link rel="stylesheet" href="stylesheets/slider.css">
-    <link rel="stylesheet" href="stylesheets/servicesectioon.css">
-    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=13-zzJJGS_m9v8vAxdMMoHUJvNljmaC6k">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=1rwURIRD0vxliQ_fcgM6P_Nsq3Yj-Jz8w">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=1wcK0tF4bmDw5HwHYjuh3dFvohzNz8b4f">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=1s9_4GRwxWVdBH_5VobhPhy2Wwk8B9DZB">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=12x1JB1lMKWyRpZw86sVsId3jlnSF2aqp">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=1BjYBIkcM96lrAlFmjbRUb9Kv-TSmtN9i">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&amp;id=13rqCzHLv_BOgTO4whBOXNqJ9vb0PVRIy">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
@@ -41,19 +39,19 @@
                 </li>
                 <li class="item mid">
                     <i class="fa fa-home red"></i>
-                    <a href="/dashboard/index.html">Explore Campaigns</a>
+                    <a href="sign.jsp">Explore Campaigns</a>
                 </li>
                 <li class="item mid">
                     <i class="fa fa-user green" aria-hidden="true"></i>
-                    <a href="">Fundraise For</a>
+                    <a href="sign.jsp">Fundraise For</a>
                 </li>
                 <li class="item mid yellow">
                     <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    <a href="">How It Works</a>
+                    <a href="sign.jsp">How It Works</a>
                 </li>
                 <li class="item mid ">
                     <i class="fa fa-microphone blue" aria-hidden="true"></i>
-                    <a href="">About US</a>
+                    <a href="sign.jsp">About US</a>
                 </li>
                 <%
                 if(session.getAttribute("display")=="hide"){
@@ -69,7 +67,6 @@
             </ul>
         </nav>
         <div class="particle-container">
-
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
@@ -104,9 +101,9 @@
 
         <div class="row">
             <div class="col-11">
-                <img class="elements" src="assets/hero-bg.png" alt="">
+                <img class="elements" src="https://i.ibb.co/gDz3vn7/guide.png" alt="">
             </div>
-            <div class="col-12">
+            <div class="col-12" style="margin-top:48px;">
                 <h1>Be The <span class="red">Change</span> <br> <span class="green">You</span> Want To See In The <span
                         class="yellow">World</span></h1>
                 <a href="form.html" class="btn">Raise Fund Now</a>
@@ -174,7 +171,7 @@
 
                 </div>
                 <div class="col-22">
-                    <img class="elements" src="assets/guide.png" alt="">
+                    <img class="elements" src="https://i.ibb.co/27Dgj9g/hero-bg.png" alt="">
                 </div>
                 <!-- <div class="button-container">
                     <a href="" class="btn">START A FUNDRAISER FOR FREE</a>
@@ -248,7 +245,7 @@
                 <div class="box">
                     <div class="content">
                         <div class="card-img">
-                            <img src="assets/card-2.png" alt="">
+                            <img src="https://i.ibb.co/pP2Sghh/card-2.png" alt="">
                         </div>
                         <h3>Card One</h3>
                         <p>
@@ -264,7 +261,7 @@
                 <div class="box">
                     <div class="content">
                         <div class="card-img">
-                            <img src="assets/card-3.jpg" alt="">
+                            <img src="https://i.ibb.co/0JJfzNn/card-3.jpg" alt="">
                         </div>
                         <h3>Card Two</h3>
                         <p>
@@ -280,7 +277,7 @@
                 <div class="box">
                     <div class="content">
                         <div class="card-img">
-                            <img src="assets/card-4.jpeg" alt="">
+                            <img src="https://i.ibb.co/Xbq9bF3/card-4.jpg" alt="">
                         </div>
                         <h3>Card Three</h3>
                         <p>
@@ -440,8 +437,55 @@
         </ul>
         <p class="copyright"> Donor_And_DonationÂ©2022</p>
     </footer>
-    <script src="/scripts/slide.js"></script>
+    <script>
+    var slide = document.getElementById("slider");
+    var btn1 = document.getElementById("btn-1");
+    var btn2 = document.getElementById("btn-2");
+    var btn3 = document.getElementById("btn-3");
+    var btn4 = document.getElementById("btn-4");
+    var btn5 = document.getElementById("btn-5");
+    btn1.onclick = function () {
+        slide.style.transform = "translateX(0px)";
+        btn1.classList.add("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+        btn5.classList.remove("active");
+    }
+    btn2.onclick = function () {
+        slide.style.transform = "translateX(-100%)";
+        btn2.classList.add("active");
+        btn1.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+        btn5.classList.remove("active");
+    }
+    btn3.onclick = function () {
+        slide.style.transform = "translateX(-200%)";
+        btn3.classList.add("active");
+        btn2.classList.remove("active");
+        btn1.classList.remove("active");
+        btn4.classList.remove("active");
+        btn5.classList.remove("active");
+    }
+    btn4.onclick = function () {
+        slide.style.transform = "translateX(-300%)";
+        btn4.classList.add("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+        btn1.classList.remove("active");
+        btn5.classList.remove("active");
+    }
+    btn5.onclick = function () {
+        slide.style.transform = "translateX(-400%)";
+        btn5.classList.add("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+        btn1.classList.remove("active");
+    }
 
+    </script>
 </body>
 
 </html>

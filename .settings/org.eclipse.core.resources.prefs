@@ -1,2 +1,11 @@
 eclipse.preferences.version=1
+encoding//WebContent/admin_panel_donee.jsp=UTF-8
+encoding//WebContent/admin_panel_donor.jsp=UTF-8
+encoding//WebContent/admin_panel_feedback.jsp=UTF-8
+encoding//WebContent/admin_panel_payment.jsp=UTF-8
+encoding//WebContent/admin_panel_users.jsp=UTF-8
+encoding//WebContent/categoryData.jsp=UTF-8
+encoding//WebContent/explore.jsp=UTF-8
 encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/profile.jsp=UTF-8
+encoding//WebContent/show.jsp=UTF-8

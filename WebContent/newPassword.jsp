@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/sign.css">
+	<link href="https://drive.google.com/uc?export=view&amp;id=1jT1s3zzQWqogrlTjElvVwge5Ugv1QEw0" rel="stylesheet">	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
@@ -25,7 +25,7 @@
 			<span>or try login</span>
 			<input name="password" type="password" placeholder="New Password" />
 			<input name="confPassword" type="password" placeholder="Re-Enter Password" />
-			<button>Sign In</button>	
+			<button>Submit</button>	
 		</form>
 	</div>
 	<div class="overlay-container">

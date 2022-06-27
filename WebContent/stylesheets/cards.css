@@ -14,7 +14,7 @@
                 inset -5px -5px 5px rgba(255, 255, 255, 0.5),
                 5px 5px 5px rgba(0, 0, 0, 0.05),
                 -5px -5px 5px rgba(255, 255, 255, 0.5);
-                border-radius: 15px; 
+                /* border-radius: 15px;  */
                 margin: 30px;
 }
 .container .card .box{
@@ -65,7 +65,7 @@ text-align: center;
 .container .card:hover .box .content a{
     background: #76d722;
     color: #fff;
-    border-radius: 0px;
+    /* border-radius: 0px; */
     transition: 0.5s;
     
 }
